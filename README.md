@@ -25,7 +25,7 @@ Version without qBittorrent here - https://github.com/MrKsey/torrserver
 - Torrents are added to QBittorrent in a PAUSED state
 - Torrents resume loading at 2 a.m.  
 
-ℹ See qBittorrent and [ts.ini](https://github.com/MrKsey/torrserver-plus/blob/main/ts.ini) settings for additional parameters
+ℹ See qBittorrent and [ts.ini](https://github.com/avogabo/torrserver-plus/blob/main/ts.ini) settings for additional parameters
 
 
 ### Installing
@@ -34,14 +34,14 @@ Version without qBittorrent here - https://github.com/MrKsey/torrserver
 ```
 docker run --name torrserver-plus -e TZ=Europe/London -d --restart=unless-stopped --net=host \
 -v /docker/torrserver-plus:/TS/db \
-ksey/torrserver-plus
+avogabo/torrserver-plus
 ```
 If you want to download torrents to another folder ("/your/downloads/folder"):
 ```
 docker run --name torrserver-plus -e TZ=Europe/London -d --restart=unless-stopped --net=host \
 -v /docker/torrserver-plus:/TS/db \
 -v /your/downloads/folder:/TS/db/torrents \
-ksey/torrserver-plus
+avogabo/torrserver-plus
 ```
 Do not forget to configure the corresponding write permits for the folder "/your/downloads/folder"
 
