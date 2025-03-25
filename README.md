@@ -1,4 +1,4 @@
-# TorrServer Plus
+# TorrServer Plus+
 This is unofficial docker image with latest versions TorrServer and qBittorrent.  
 Version without qBittorrent here - https://github.com/MrKsey/torrserver
 
@@ -29,19 +29,19 @@ Version without qBittorrent here - https://github.com/MrKsey/torrserver
 
 
 ### Installing
-- сreate "/docker/torrserver-plus" directory (for example) on your host
+- сreate "/docker/torrserver-plus+" directory (for example) on your host
 - run container (set correct time zone TZ):
 ```
-docker run --name torrserver-plus -e TZ=Europe/London -d --restart=unless-stopped --net=host \
--v /docker/torrserver-plus:/TS/db \
-avogabo/torrserver-plus
+docker run --name torrserver-plus+ -e TZ=Europe/London -d --restart=unless-stopped --net=host \
+-v /docker/torrserver-plus+:/TS/db \
+avogabo/torrserver-plus+
 ```
 If you want to download torrents to another folder ("/your/downloads/folder"):
 ```
-docker run --name torrserver-plus -e TZ=Europe/London -d --restart=unless-stopped --net=host \
--v /docker/torrserver-plus:/TS/db \
+docker run --name torrserver-plus+ -e TZ=Europe/London -d --restart=unless-stopped --net=host \
+-v /docker/torrserver-plus+:/TS/db \
 -v /your/downloads/folder:/TS/db/torrents \
-avogabo/torrserver-plus
+avogabo/torrserver-plus+
 ```
 Do not forget to configure the corresponding write permits for the folder "/your/downloads/folder"
 
