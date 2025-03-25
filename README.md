@@ -44,3 +44,5 @@ docker run --name torrserver-plus -e TZ=Europe/London -d --restart=unless-stoppe
 ksey/torrserver-plus
 ```
 Do not forget to configure the corresponding write permits for the folder "/your/downloads/folder"
+
+Añadir en el PLUS.py, tus url de torrserver y qbitorrent, asi como los announce de tus trackers privados. Creado para resolver problemas en el paso automatico de torrents de Torrserver a Qbitorrent en trackers privados
